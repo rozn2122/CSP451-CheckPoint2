@@ -27,3 +27,7 @@ res.status(201).json({ message: “User created” });
 export default router;
 
 Import into app.js.
+catch (err) {
+    console.error("Database connection failed", err);
+  }
+}

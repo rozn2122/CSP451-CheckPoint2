@@ -18,3 +18,6 @@ function connect() {
 }
 
 module.exports = { connect };
+export function connectDB() {
+  console.log("Database connected");
+}

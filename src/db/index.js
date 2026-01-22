@@ -21,3 +21,8 @@ module.exports = { connect };
 export function connectDB() {
   console.log("Database connected");
 }
+export function connectDB() {
+  const host = "localhost";
+  const port = 5432;
+  console.log(⁠ Database connected at ${host}:${port} ⁠);
+}

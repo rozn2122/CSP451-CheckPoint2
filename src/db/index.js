@@ -22,7 +22,11 @@ export function connectDB() {
   console.log("Database connected");
 }
 export function connectDB() {
+ try { 
   const host = "localhost";
   const port = 5432;
   console.log(⁠ Database connected at ${host}:${port} ⁠);
+} catch (err) {
+    console.error("Database connection failed", err);
+  }
 }

@@ -13,3 +13,25 @@ router.get("/health", (req, res) => {
 });
 
 module.exports = { router };
+import express from “express”;
+const router = express.Router();
+
+router.get(”/users”, (req, res) => {
+res.json([{ id: 1, name: “Test User” }]);
+});
+
+router.post(”/users”, (req, res) => {
+res.status(201).json({ message: “User created” });
+});
+
+export default router;
+
+Import into app.js.
+catch (err) {
+    console.error("Database connection failed", err);
+  }
+}
+/ API version info
+router.get("/version", (req, res) => {
+  res.json({ version: "1.0.0" });
+});

@@ -1,3 +1,6 @@
+feature/api-endpoints
+// API endpoints feature added
+
 export const loginUser = (req, res) => {
   const { email, password } = req.body;
 
@@ -15,3 +18,4 @@ export const loginUser = (req, res) => {
 
   return res.status(200).json({ message: "Login successful" });
 };
+main

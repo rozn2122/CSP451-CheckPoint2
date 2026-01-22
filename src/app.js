@@ -32,3 +32,9 @@ const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
   console.log(`Server running at http://localhost:${PORT}`);
 });
+feature/database-connection
+// Database connection feature added
+
+import authRoutes from "./routes/auth.js";
+app.use("/auth", authRoutes);
+main
